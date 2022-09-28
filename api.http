@@ -1,0 +1,9 @@
+POST http://localhost:3000/wallets
+Content-Type: application/json
+
+{
+  "userId": "b3ff4743-50ce-465f-a239-b64e775d822b"
+}
+
+###
+GET http://localhost:3000/wallets/b3ff4743-50ce-465f-a239-b64e775d822b
