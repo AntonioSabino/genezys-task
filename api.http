@@ -1,9 +1,24 @@
 POST http://localhost:3000/wallets
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6ImpvaG4iLCJzdWIiOiIyNjQ1YTE2NC0wMjIxLTQyOTYtODYyMC02ZjlkM2MxNTcwOGEiLCJpYXQiOjE2NjQzNzA0NTIsImV4cCI6MTY2NDM3NDA1Mn0.2NZyRY7Nso0O0p-Is0OL4xIJdOCF8H1cqpzVPl8Pyao
 Content-Type: application/json
 
 {
-  "userId": "b3ff4743-50ce-465f-a239-b64e775d822b"
+  "userId": "2645a164-0221-4296-8620-6f9d3c15708a"
 }
 
 ###
-GET http://localhost:3000/wallets/b3ff4743-50ce-465f-a239-b64e775d822b
+GET http://localhost:3000/wallets/2645a164-0221-4296-8620-6f9d3c15708a
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6ImpvaG4iLCJzdWIiOiIyNjQ1YTE2NC0wMjIxLTQyOTYtODYyMC02ZjlkM2MxNTcwOGEiLCJpYXQiOjE2NjQzNzA0NTIsImV4cCI6MTY2NDM3NDA1Mn0.2NZyRY7Nso0O0p-Is0OL4xIJdOCF8H1cqpzVPl8Pyao
+
+###
+GET http://localhost:3000/profile
+
+###
+POST http://localhost:3000/auth/login
+Content-Type: application/json
+
+{"username": "john", "password": "changeme"}
+
+###
+GET http://localhost:3000/profile
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6ImpvaG4iLCJzdWIiOiIyNjQ1YTE2NC0wMjIxLTQyOTYtODYyMC02ZjlkM2MxNTcwOGEiLCJpYXQiOjE2NjQzNzA0NTIsImV4cCI6MTY2NDM3NDA1Mn0.2NZyRY7Nso0O0p-Is0OL4xIJdOCF8H1cqpzVPl8Pyao
