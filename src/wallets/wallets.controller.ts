@@ -10,11 +10,9 @@ export class WalletsController {
   @UseGuards(JwtAuthGuard)
   @Post()
   async create(@Body() createWalletDto: CreateWalletDto) {
-    const { userId, walletAddress } = await this.walletsService.create(
-      createWalletDto,
-    );
+    const wallet = await this.walletsService.create(createWalletDto);
 
-    return { userId, walletAddress };
+    return wallet;
   }
 
   @UseGuards(JwtAuthGuard)

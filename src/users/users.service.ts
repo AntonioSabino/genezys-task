@@ -11,13 +11,13 @@ export class UsersService {
   private readonly users: TUser[] = [
     {
       userId: '2645a164-0221-4296-8620-6f9d3c15708a',
-      username: 'john',
-      password: 'changeme',
+      username: 'Antonio',
+      password: 'Sabino',
     },
     {
       userId: '5f71297e-cf9f-4c78-88ff-1867f131a3d4',
-      username: 'maria',
-      password: 'guess',
+      username: 'Sabino',
+      password: 'Antonio',
     },
   ];
 

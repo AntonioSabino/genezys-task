@@ -1,14 +1,15 @@
 POST http://localhost:3000/wallets
-Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6ImpvaG4iLCJzdWIiOiIyNjQ1YTE2NC0wMjIxLTQyOTYtODYyMC02ZjlkM2MxNTcwOGEiLCJpYXQiOjE2NjQzNzA0NTIsImV4cCI6MTY2NDM3NDA1Mn0.2NZyRY7Nso0O0p-Is0OL4xIJdOCF8H1cqpzVPl8Pyao
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6IlNhYmlubyIsInN1YiI6IjVmNzEyOTdlLWNmOWYtNGM3OC04OGZmLTE4NjdmMTMxYTNkNCIsImlhdCI6MTY2NDQxMDAzNywiZXhwIjoxNjY0NDEzNjM3fQ.NaONvAgw4hKoh123a3Rjm51bWIn0F7-Ht_tcSafhpCc
 Content-Type: application/json
 
 {
-  "userId": "2645a164-0221-4296-8620-6f9d3c15708a"
+  "url": "https://google.com.br",
+  "userId": "5f71297e-cf9f-4c78-88ff-1867f131a3d4"
 }
 
 ###
 GET http://localhost:3000/wallets/2645a164-0221-4296-8620-6f9d3c15708a
-Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6ImpvaG4iLCJzdWIiOiIyNjQ1YTE2NC0wMjIxLTQyOTYtODYyMC02ZjlkM2MxNTcwOGEiLCJpYXQiOjE2NjQzNzA0NTIsImV4cCI6MTY2NDM3NDA1Mn0.2NZyRY7Nso0O0p-Is0OL4xIJdOCF8H1cqpzVPl8Pyao
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6IlNhYmlubyIsInN1YiI6IjVmNzEyOTdlLWNmOWYtNGM3OC04OGZmLTE4NjdmMTMxYTNkNCIsImlhdCI6MTY2NDQwNjM3MywiZXhwIjoxNjY0NDA5OTczfQ.Pa07vi06TP5WDuUI_Z-ZSzltHy6UV7wkUcClBYORBkc
 
 ###
 GET http://localhost:3000/profile
@@ -17,8 +18,8 @@ GET http://localhost:3000/profile
 POST http://localhost:3000/auth/login
 Content-Type: application/json
 
-{"username": "john", "password": "changeme"}
+{"username": "Sabino", "password": "Antonio"}
 
 ###
 GET http://localhost:3000/profile
-Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6ImpvaG4iLCJzdWIiOiIyNjQ1YTE2NC0wMjIxLTQyOTYtODYyMC02ZjlkM2MxNTcwOGEiLCJpYXQiOjE2NjQzNzA0NTIsImV4cCI6MTY2NDM3NDA1Mn0.2NZyRY7Nso0O0p-Is0OL4xIJdOCF8H1cqpzVPl8Pyao
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6IlNhYmlubyIsInN1YiI6IjVmNzEyOTdlLWNmOWYtNGM3OC04OGZmLTE4NjdmMTMxYTNkNCIsImlhdCI6MTY2NDQwNjM3MywiZXhwIjoxNjY0NDA5OTczfQ.Pa07vi06TP5WDuUI_Z-ZSzltHy6UV7wkUcClBYORBkc
