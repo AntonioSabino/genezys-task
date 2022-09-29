@@ -21,22 +21,14 @@ export class WalletsService {
       walletAddress,
     });
 
+    const completeUrl = `${url}/${JSON.stringify({ userId, walletAddress })}`;
+
     //Webhook - fetch POST google.com/userId+wallet
-    console.log(
-      this.httpService
-        .post(
-          `${url}/${JSON.stringify({
-            userId,
-            walletAddress,
-          })}`,
-          {
-            headers: {
-              'Content-Type': 'application/json',
-            },
-          },
-        )
-        .subscribe(),
-    );
+    this.httpService.post(completeUrl, {
+      headers: {
+        'Content-Type': 'application/json',
+      },
+    });
 
     createdWallet.save();
 
