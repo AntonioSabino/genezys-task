@@ -21,21 +21,14 @@ export class WalletsService {
       walletAddress,
     });
 
-    const completeUrl = `${url}/${JSON.stringify({ userId, walletAddress })}`;
-
-    //Webhook - fetch POST google.com/userId+wallet
-    this.httpService.post(completeUrl, {
-      headers: {
-        'Content-Type': 'application/json',
-      },
-    });
+    const data = await this.httpService.axiosRef
+      .post(url, { userId, walletAddress })
+      .then((resp) => resp.config.data)
+      .catch((err) => err);
 
     createdWallet.save();
 
-    return {
-      userId,
-      walletAddress,
-    };
+    return data;
   }
 
   async getById(userId: string) {
